@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 function Exterpolation() {
     return (
         
@@ -5,11 +7,9 @@ function Exterpolation() {
             <h1>Extrapolation</h1>
             
             <h2>Choose Again</h2>
-            <ul 
-                style={{ listStyle: 'none', padding: 0 }}>
-                <li><a href="/Exterpolation/Simple"> <h2>Simple Regression</h2></a></li>
-                <li><a href="/Exterpolation/Multi"> <h2>Multiple Regreesion</h2></a></li>
-
+            <ul style={{ listStyle: 'none', padding: 0 }}>
+                <li><Link to="/Exterpolation/Simple"><h2>Simple Regression</h2></Link></li>
+                <li><Link to="/Exterpolation/Multi"><h2>Multiple Regression</h2></Link></li>
             </ul>
         </>
     )

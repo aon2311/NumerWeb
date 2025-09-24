@@ -18,11 +18,9 @@ import Cramer from './Linear-algebra/Cramer.jsx';
 import G_eli from './Linear-algebra/G_eli.jsx';
 import G_jor from './Linear-algebra/G_jor.jsx';
 import Matrix from './Linear-algebra/Matrix.jsx';
-import Lu from './Linear-algebra/Matrix.jsx';
+import Lu from './Linear-algebra/Lu.jsx';
 import Jacobi from './Linear-algebra/Jacobi.jsx';
 import Conju from './Linear-algebra/Conju.jsx';
-
-
 
 import Interpolation from './Interpolation/Interpolation.jsx'
 import Lagrange from './Interpolation/Lagrange.jsx'
@@ -33,6 +31,13 @@ import Exterpolation from './Exterpolation/Exterpolation.jsx';
 import Multi from './Exterpolation/Multi.jsx';
 import Simple from './Exterpolation/Simple.jsx';
 
+import Integration from './Integration/Integration.jsx';
+import Trap from './Integration/Trap.jsx';
+import Simpson from './Integration/Simpson.jsx';
+import Compo_Trap from './Integration/Compo_Trap.jsx';
+import Compo_Simpson from './Integration/Compo_Sim.jsx';
+
+import Diff from './Diff/Diff.jsx';
 
 
 
@@ -50,13 +55,13 @@ createRoot(document.getElementById('root')).render(
         <Route path="/Root-of-Equation/secant" element={<Secant />} />
 
         <Route path="/Linear-algebra/Linear" element={<Linear />} />
-        <Route path="/Linear-algebra/cramer" element={<Cramer />} />
-        <Route path="/Linear-algebra/g_eli" element={<G_eli />} />
-        <Route path="/Linear-algebra/g_jor" element={<G_jor />} />
-        <Route path="/Linear-algebra/matrix" element={<Matrix />} />
+        <Route path="/Linear-algebra/Cramer" element={<Cramer />} />
+        <Route path="/Linear-algebra/G_eli" element={<G_eli />} />
+        <Route path="/Linear-algebra/G_jor" element={<G_jor />} />
+        <Route path="/Linear-algebra/Matrix" element={<Matrix />} />
         <Route path="/Linear-algebra/lu" element={<Lu />} />
-        <Route path="/Linear-algebra/jacobi" element={<Jacobi />} />
-        <Route path="/Linear-algebra/conju" element={<Conju />} />
+        <Route path="/Linear-algebra/Jacobi" element={<Jacobi />} />
+        <Route path="/Linear-algebra/Conju" element={<Conju />} />
 
         <Route path="/Interpolation/Interpolation" element={<Interpolation />} />
         <Route path="/Interpolation/Newtondiff" element={<Newtondiff />} />
@@ -65,6 +70,19 @@ createRoot(document.getElementById('root')).render(
 
 
         <Route path="/Exterpolation/Exterpolation" element={<Exterpolation />} />
+        <Route path="/Exterpolation/Multi" element={<Multi />} />
+        <Route path="/Exterpolation/Simple" element={<Simple />} />
+
+        <Route path="/Integration/Integration" element={<Integration />} />
+        <Route path="/Integration/Trap" element={<Trap />} />
+        <Route path="/Integration/Simpson" element={<Simpson />} />
+        <Route path="/Integration/Compo_Trap" element={<Compo_Trap />} />
+        <Route path="/Integration/Compo_Simpson" element={<Compo_Simpson />} />
+
+        <Route path="/Diff/Diff" element={<Diff />} />
+        
+
+
 
 
       </Routes>

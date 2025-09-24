@@ -1,7 +1,7 @@
 function Multi (){
     return (
         <>
-            <h1></h1>
+            <h1>Multiple Regression</h1>
         </>
     )
 }
